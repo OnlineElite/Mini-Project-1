@@ -1,0 +1,137 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-image: url(images/back.jpg);
+}
+/*-------------------head section--------------------*/
+header{
+    position: relative;
+    background-color: black; 
+    height: 50px;
+}
+.nav{
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    top:13px;
+    color: white;
+    font-size: 18px;  
+}
+.nav a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    position: absolute;
+    left: 40px;
+    top: 8px;
+}
+.logo i{
+    font-size: 35px;
+    color: white;
+}
+
+/*-------------------footer section--------------------*/
+footer{
+    background-color: black;
+    position: fixed;
+    color:white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 15px;
+}
+/*-----------------content section--------------*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+.container .price{
+    font-size: 16px;
+    color: green;
+    font-weight: bold;
+}
+.container #oprice{
+    color: rgb(168, 166, 166);
+    margin-left: 5px;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+.card{
+    transition: 1s;
+    position: relative;
+    text-align: center;
+    width: 250px;
+    font-size: 18px;
+    margin:20px 40px;
+    background-color: rgb(168, 231, 168);
+    border-radius: 5px;
+    box-shadow: 0 5px 8px 0 black, 0 7px 20px 0 gray;
+}
+.card img{
+    width: 250px;
+    height: 290px;
+    border-radius: 5px;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.card button{
+    margin:10px auto;
+    padding: 5px 5px;
+    background-color: white;
+    border: 1px solid rgb(170, 169, 169);
+    border-radius: 5px;
+    transition: 1s;
+}
+.card button:hover {
+    background-color:rgb(18, 177, 3);
+    transform: scale(1.1);
+    color:white;
+    border-radius: 3px;
+    font-weight: bold;
+    border-radius:7px ;
+}
+#circle{
+    position: absolute;
+    background-color:rgb(2, 163, 2);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-align: center;
+    z-index: 10;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#circle p{
+    color:white;
+   margin-top: 10px;
+   font-size: 14px;
+}
+#remis {
+    position: absolute;
+    background-color: rgb(235, 49, 49);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-align: center;
+    z-index: 10;
+     right:5px;
+     top:5px;
+    float: right;
+}
+#remis p {
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+}
